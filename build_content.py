@@ -13,8 +13,7 @@ esc = html.escape
 short_names = ['TV', 'Laptop', 'Mobile', 'Home Theater', 'Inverter / UPS', 'Washing Machine', 'Refrigerator', 'Air Conditioner', 'RO Purifier']
 assets = DIST / 'assets'
 assets.mkdir(exist_ok=True)
-logo = Image.open(SOURCE / 'assets/header-logo.jpg').convert('RGB')
-logo.resize((480, 235), Image.Resampling.LANCZOS).save(assets / 'rishi-original-logo.webp', 'WEBP', quality=94, method=6)
+shutil.copy2(SOURCE / 'assets/rishi-logo-transparent.webp', assets / 'rishi-logo-transparent.webp')
 favicon = ImageOps.contain(Image.open(SOURCE / 'assets/favicon-online.png').convert('RGB'), (64,64), Image.Resampling.LANCZOS)
 favicon_canvas = Image.new('RGB',(64,64),'black')
 favicon_canvas.paste(favicon, ((64-favicon.width)//2,(64-favicon.height)//2))
@@ -54,7 +53,7 @@ def icon(name, cls=''):
     return f'<svg viewBox="{view}" aria-hidden="true" class="{cls}">{paths[name]}</svg>'
 
 def brand():
-    return '<a class="brand" href="/" aria-label="Rishi Electronics home"><img class="brand-logo" src="/assets/rishi-original-logo.webp" alt="Rishi Electronics original logo" width="480" height="235"><span class="brand-location">Palayamkottai,<br>Tirunelveli</span></a>'
+    return '<a class="brand" href="/" aria-label="Rishi Electronics home"><img class="brand-logo" src="/assets/rishi-logo-transparent.webp" alt="Rishi Electronics original logo" width="480" height="235"><span class="brand-location">Palayamkottai,<br>Tirunelveli</span></a>'
 
 def header():
     return f'''<a href="#main" class="skip">Skip to content</a><header class="site-header"><div class="wrap header-inner">{brand()}
@@ -131,7 +130,7 @@ Differences retained: .com has RO purifier, .online omits it. Nine categories ar
 
 Repair requests are browser-local drafts and are handed to WhatsApp or email after explicit customer action. No request is automatically sent or claimed to be received. No customer data, secret form credentials, database or analytics is deployed.
 
-The hero is a new illustrative AI-generated appliance arrangement. Service pictures and shop exterior come from the supplied original asset package, optimized as separate copies. Their reuse rights should be confirmed by the business before a public custom-domain launch. The original Rishi Electronics header logo and matching flame favicon are reused from the supplied previous-site assets, following the user's request.
+The hero is a new illustrative AI-generated appliance arrangement. Service pictures and shop exterior come from the supplied original asset package, optimized as separate copies. Their reuse rights should be confirmed by the business before a public custom-domain launch. The Rishi Electronics logo uses a transparent-background adaptation of the supplied original, approved in preview by the user. The matching flame favicon comes from the previous-site assets.
 
 The deployment is a separate owner-private Site. Existing .com/.online hosting and DNS are unchanged. The domain canonical/sitemap use the actual new Site origin.
 ''')

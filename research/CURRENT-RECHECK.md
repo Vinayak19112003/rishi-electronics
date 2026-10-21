@@ -12,6 +12,6 @@ Differences retained: .com has RO purifier, .online omits it. Nine categories ar
 
 Repair requests are browser-local drafts and are handed to WhatsApp or email after explicit customer action. No request is automatically sent or claimed to be received. No customer data, secret form credentials, database or analytics is deployed.
 
-The hero is a new illustrative AI-generated appliance arrangement. Service pictures and shop exterior come from the supplied original asset package, optimized as separate copies. Their reuse rights should be confirmed by the business before a public custom-domain launch. The original Rishi Electronics header logo and matching flame favicon are reused from the supplied previous-site assets, following the user's request.
+The hero is a new illustrative AI-generated appliance arrangement. Service pictures and shop exterior come from the supplied original asset package, optimized as separate copies. Their reuse rights should be confirmed by the business before a public custom-domain launch. The Rishi Electronics logo uses a transparent-background adaptation of the supplied original, approved in preview by the user. The matching flame favicon comes from the previous-site assets.
 
 The deployment is a separate owner-private Site. Existing .com/.online hosting and DNS are unchanged. The domain canonical/sitemap use the actual new Site origin.
