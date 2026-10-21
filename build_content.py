@@ -1,7 +1,7 @@
 """Generate a buildless service website from the collected business catalogue."""
 from pathlib import Path
 import json, html, shutil
-from PIL import Image
+from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parent
 DIST = ROOT / 'dist'
@@ -13,6 +13,12 @@ esc = html.escape
 short_names = ['TV', 'Laptop', 'Mobile', 'Home Theater', 'Inverter / UPS', 'Washing Machine', 'Refrigerator', 'Air Conditioner', 'RO Purifier']
 assets = DIST / 'assets'
 assets.mkdir(exist_ok=True)
+logo = Image.open(SOURCE / 'assets/header-logo.jpg').convert('RGB')
+logo.resize((480, 235), Image.Resampling.LANCZOS).save(assets / 'rishi-original-logo.webp', 'WEBP', quality=94, method=6)
+favicon = ImageOps.contain(Image.open(SOURCE / 'assets/favicon-online.png').convert('RGB'), (64,64), Image.Resampling.LANCZOS)
+favicon_canvas = Image.new('RGB',(64,64),'black')
+favicon_canvas.paste(favicon, ((64-favicon.width)//2,(64-favicon.height)//2))
+favicon_canvas.save(assets / 'rishi-original-favicon.png')
 for s, short in zip(services, short_names):
     s['short_name'] = short
     im = Image.open(SOURCE / s['image']).convert('RGB')
@@ -48,7 +54,7 @@ def icon(name, cls=''):
     return f'<svg viewBox="{view}" aria-hidden="true" class="{cls}">{paths[name]}</svg>'
 
 def brand():
-    return f'<a class="brand" href="/" aria-label="Rishi Electronics home">{icon("chip", "brand-mark")}<span><span class="brand-name"><strong>RISHI</strong> <span>ELECTRONICS</span></span><small>Palayamkottai, Tirunelveli</small></span></a>'
+    return '<a class="brand" href="/" aria-label="Rishi Electronics home"><img class="brand-logo" src="/assets/rishi-original-logo.webp" alt="Rishi Electronics original logo" width="480" height="235"><span class="brand-location">Palayamkottai,<br>Tirunelveli</span></a>'
 
 def header():
     return f'''<a href="#main" class="skip">Skip to content</a><header class="site-header"><div class="wrap header-inner">{brand()}
@@ -72,7 +78,7 @@ def request_dialog():
 
 def document(title, description, body, path='/'):
     schema = {'@context':'https://schema.org','@type':'LocalBusiness','name':business['name'],'url':ORIGIN,'telephone':business['contact']['phone_e164'],'email':business['contact']['email'],'address':{'@type':'PostalAddress','streetAddress':'H107, Kamarajar Salai, Anbunagar, Maharaja Nagar','addressLocality':'Palayamkottai, Tirunelveli','addressRegion':'Tamil Nadu','postalCode':'627011','addressCountry':'IN'},'openingHoursSpecification':[{'@type':'OpeningHoursSpecification','dayOfWeek':['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],'opens':'09:00','closes':'20:00'}]}
-    return f'''<!doctype html><html lang="en-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#006575"><title>{esc(title)}</title><meta name="description" content="{esc(description)}"><link rel="canonical" href="{ORIGIN}{path}"><meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}"><meta property="og:url" content="{ORIGIN}{path}"><meta property="og:image" content="{ORIGIN}/assets/appliances.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><script type="application/ld+json">{json.dumps(schema)}</script></head><body>{header()}{body}{footer()}{request_dialog()}<script id="service-data" type="application/json">{json.dumps([{'id':s['id'],'name':s['name']} for s in services]).replace('<','&lt;')}</script><script type="module" src="/app.js"></script><noscript><div class="wrap"><p>Please call <a href="tel:+919655333511">+91 96553 33511</a> or <a href="https://wa.me/919655333511">contact us on WhatsApp</a> to request a repair.</p></div></noscript></body></html>'''
+    return f'''<!doctype html><html lang="en-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#006575"><title>{esc(title)}</title><meta name="description" content="{esc(description)}"><link rel="canonical" href="{ORIGIN}{path}"><meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}"><meta property="og:url" content="{ORIGIN}{path}"><meta property="og:image" content="{ORIGIN}/assets/appliances.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/assets/rishi-original-favicon.png" type="image/png"><link rel="stylesheet" href="/styles.css"><script type="application/ld+json">{json.dumps(schema)}</script></head><body>{header()}{body}{footer()}{request_dialog()}<script id="service-data" type="application/json">{json.dumps([{'id':s['id'],'name':s['name']} for s in services]).replace('<','&lt;')}</script><script type="module" src="/app.js"></script><noscript><div class="wrap"><p>Please call <a href="tel:+919655333511">+91 96553 33511</a> or <a href="https://wa.me/919655333511">contact us on WhatsApp</a> to request a repair.</p></div></noscript></body></html>'''
 
 def service_card(s):
     small = ' small-source' if s['id'] in ['home-theater','inverter','ro-repair'] else ''
@@ -125,7 +131,7 @@ Differences retained: .com has RO purifier, .online omits it. Nine categories ar
 
 Repair requests are browser-local drafts and are handed to WhatsApp or email after explicit customer action. No request is automatically sent or claimed to be received. No customer data, secret form credentials, database or analytics is deployed.
 
-The hero is a new illustrative AI-generated appliance arrangement. Service pictures and shop exterior come from the supplied original asset package, optimized as separate copies. Their reuse rights should be confirmed by the business before a public custom-domain launch. The teal chip and wordmark are a design treatment following the user's selected reference, not a claim of an existing registered mark.
+The hero is a new illustrative AI-generated appliance arrangement. Service pictures and shop exterior come from the supplied original asset package, optimized as separate copies. Their reuse rights should be confirmed by the business before a public custom-domain launch. The original Rishi Electronics header logo and matching flame favicon are reused from the supplied previous-site assets, following the user's request.
 
 The deployment is a separate owner-private Site. Existing .com/.online hosting and DNS are unchanged. The domain canonical/sitemap use the actual new Site origin.
 ''')
