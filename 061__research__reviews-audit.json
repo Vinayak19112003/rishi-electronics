@@ -1,0 +1,74 @@
+{
+  "rating_displayed": 5.0,
+  "rating_verified": false,
+  "review_count_published": null,
+  "source_review_cards_each_site": 6,
+  "rendered_duplicate_cards_are_not_new_reviews": true,
+  "published_review_link": "https://www.google.com/search?q=Rishi+Electronics+Reviews",
+  "com": [
+    {
+      "displayed_author": "Sutherson T",
+      "topic_summary": "Service and price satisfaction",
+      "verified": false
+    },
+    {
+      "displayed_author": "K. Kalimuthuraj R. Kalimuthuraj",
+      "topic_summary": "Television repair and communication",
+      "verified": false
+    },
+    {
+      "displayed_author": "Nagarajan Nagaraja.m",
+      "topic_summary": "Television service and affordability",
+      "verified": false
+    },
+    {
+      "displayed_author": "Suresh Kumar",
+      "topic_summary": "Air-conditioner cooling fault",
+      "verified": false
+    },
+    {
+      "displayed_author": "Priya M.",
+      "topic_summary": "Home entertainment sound fault",
+      "verified": false
+    },
+    {
+      "displayed_author": "Anand R.",
+      "topic_summary": "Inverter and backup-power repair",
+      "verified": false
+    }
+  ],
+  "online": [
+    {
+      "displayed_author": "Happy Customer",
+      "topic_summary": "Television service and affordability",
+      "verified": false
+    },
+    {
+      "displayed_author": "Satisfied Customer",
+      "topic_summary": "Laptop turnaround and price",
+      "verified": false
+    },
+    {
+      "displayed_author": "Local Resident",
+      "topic_summary": "Washing-machine repair and explanation",
+      "verified": false
+    },
+    {
+      "displayed_author": "Suresh Kumar",
+      "topic_summary": "Air-conditioner cooling fault",
+      "verified": false
+    },
+    {
+      "displayed_author": "Priya M.",
+      "topic_summary": "Home entertainment sound fault",
+      "verified": false
+    },
+    {
+      "displayed_author": "Anand R.",
+      "topic_summary": "Inverter and backup-power repair",
+      "verified": false
+    }
+  ],
+  "conflict": "A matching TV testimonial is attributed to Happy Customer on .online and Nagarajan Nagaraja.m on .com.",
+  "publishing_rule": "Do not publish these as independently verified Google reviews. Verify against the exact business profile first. No full testimonial quotations are included."
+}

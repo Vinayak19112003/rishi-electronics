@@ -1,0 +1,254 @@
+[
+  {
+    "file": "assets/air-conditioner.png",
+    "source_urls": [
+      "https://rishielectronics.com/air-conditioner.png",
+      "https://www.rishielectronics.online/air-conditioner.png"
+    ],
+    "bytes": 273760,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "c2b7b2f500c0560eca30d7a82d142c7825e89ee47649f3a1c8a8d84587f5c4d9",
+    "role": "service_illustration",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/favicon.png",
+    "source_urls": [
+      "https://rishielectronics.com/favicon.png"
+    ],
+    "bytes": 4177,
+    "width": 64,
+    "height": 64,
+    "sha256": "9e19556120e006f8c9b822265f35a1148374159758ea7313228de8af98a49f89",
+    "role": "favicon",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/header-logo.jpg",
+    "source_urls": [
+      "https://rishielectronics.com/header-logo.jpg?v=2",
+      "https://www.rishielectronics.online/header-logo.jpg"
+    ],
+    "bytes": 735866,
+    "width": 1024,
+    "height": 501,
+    "sha256": "1ff8574b7c6bacb88d20fe66a2ed53a598ee52e9c625b8c108adcbf8a948583b",
+    "role": "brand_logo",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/hero-slide-1.jpg",
+    "source_urls": [
+      "https://rishielectronics.com/hero-slide-1.jpg",
+      "https://www.rishielectronics.online/hero-slide-1.jpg"
+    ],
+    "bytes": 855318,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "2a371945ef45f8f68e8c9284ccda779b7341bc863192d2d93fb7b42dccd7ebbe",
+    "role": "hero_background",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/hero-slide-2.jpg",
+    "source_urls": [
+      "https://rishielectronics.com/hero-slide-2.jpg",
+      "https://www.rishielectronics.online/hero-slide-2.jpg"
+    ],
+    "bytes": 857737,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "b07441650f117ee6c8859672a5093545cc0b3ed52104d02800547948a77387a5",
+    "role": "hero_background",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/hero-slide-3.jpg",
+    "source_urls": [
+      "https://rishielectronics.com/hero-slide-3.jpg",
+      "https://www.rishielectronics.online/hero-slide-3.jpg"
+    ],
+    "bytes": 777149,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "76e70e3a0cdc12c1fa467cfe6024cbffb6a5f9be5d1da03aa59ab7ebf823024d",
+    "role": "hero_background",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/hero-slide-4.jpg",
+    "source_urls": [
+      "https://rishielectronics.com/hero-slide-4.jpg",
+      "https://www.rishielectronics.online/hero-slide-4.jpg"
+    ],
+    "bytes": 840657,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "46e56d46c4be97e22835c297b24fd1127817f9e14734074fea14cc222ab812a8",
+    "role": "hero_background",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/home-theater.png",
+    "source_urls": [
+      "https://rishielectronics.com/home-theater.png",
+      "https://www.rishielectronics.online/home-theater.png"
+    ],
+    "bytes": 17904,
+    "width": 275,
+    "height": 183,
+    "sha256": "6a2bcc9cb953d04b574d48d4ee1371069e2c8b1d636d9917f931b3101408f757",
+    "role": "service_illustration",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Replace or use only at small dimensions",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/inverter-repair.png",
+    "source_urls": [
+      "https://rishielectronics.com/inverter-repair.png",
+      "https://www.rishielectronics.online/inverter-repair.png"
+    ],
+    "bytes": 38927,
+    "width": 300,
+    "height": 168,
+    "sha256": "efff3ff70164af46357821b1f401809494c83829d006f77730fb62c12742219d",
+    "role": "service_illustration",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Replace or use only at small dimensions",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/laptop-repair.png",
+    "source_urls": [
+      "https://rishielectronics.com/laptop-repair.png",
+      "https://www.rishielectronics.online/laptop-repair.png"
+    ],
+    "bytes": 376748,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "4bb42f921d86aef7b3f190f52dd604f1041d354ed9fed7c557398aab6e90aa38",
+    "role": "service_illustration",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/mobile-repair.png",
+    "source_urls": [
+      "https://rishielectronics.com/mobile-repair.png",
+      "https://www.rishielectronics.online/mobile-repair.png"
+    ],
+    "bytes": 365042,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "35e1bed6b521a4224013955861fef07e8c758dd6c1e0f2b26d2b0d79b1d38700",
+    "role": "service_illustration",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/refrigerator.png",
+    "source_urls": [
+      "https://rishielectronics.com/refrigerator.png",
+      "https://www.rishielectronics.online/refrigerator.png"
+    ],
+    "bytes": 383425,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "e3eedd0d67cda382744fa22e9118bd9cc2b11d24d02dac56ad92264ed0d2cc0c",
+    "role": "service_illustration",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/ro-purifier.jpg",
+    "source_urls": [
+      "https://rishielectronics.com/ro-purifier.jpg"
+    ],
+    "bytes": 5632,
+    "width": 225,
+    "height": 225,
+    "sha256": "b952e5d6f6505c86f296dca0e6d3b8c0bf25e4f796a5f3106ec55f5e04b6f71a",
+    "role": "service_illustration",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Replace or use only at small dimensions",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/shop-front.jpg",
+    "source_urls": [
+      "https://rishielectronics.com/shop-front.jpg",
+      "https://www.rishielectronics.online/shop-front.jpg"
+    ],
+    "bytes": 495059,
+    "width": 680,
+    "height": 306,
+    "sha256": "1520cbefb3b272b78ef24320cf1a13ff0202d2b28372d609400800157f82d939",
+    "role": "shop_photo",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/tv-repair.png",
+    "source_urls": [
+      "https://rishielectronics.com/tv-repair.png",
+      "https://www.rishielectronics.online/tv-repair.png"
+    ],
+    "bytes": 598791,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "6bbdb9ca324d79e27da72a73c2f01f6d4f2cbc057d2de1edd20d88a5210ec523",
+    "role": "service_illustration",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/washing-machine.png",
+    "source_urls": [
+      "https://rishielectronics.com/washing-machine.png",
+      "https://www.rishielectronics.online/washing-machine.png"
+    ],
+    "bytes": 384213,
+    "width": 1024,
+    "height": 1024,
+    "sha256": "47bb9d63a00361afe49302d212af4e605c5455a11a0cd270093cd82dc48cce4b",
+    "role": "service_illustration",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  },
+  {
+    "file": "assets/favicon-online.png",
+    "source_urls": [
+      "https://www.rishielectronics.online/favicon.png"
+    ],
+    "bytes": 304248,
+    "width": 879,
+    "height": 1024,
+    "sha256": "2de314cc0a773dc58407ddeae19b70db6bb257a43593415be4521926a6bb4518",
+    "role": "favicon",
+    "quality": "original_download_bytes_unchanged",
+    "rebuild_note": "Optimize a separate copy for delivery; preserve this original",
+    "ownership_license_confirmed": false
+  }
+]

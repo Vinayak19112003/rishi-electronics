@@ -1,0 +1,78 @@
+{
+  "collected_at_utc": "2026-10-13T18:46:03.446970+00:00",
+  "sources": [
+    "https://rishielectronics.com/",
+    "https://www.rishielectronics.online/"
+  ],
+  "name": "Rishi Electronics",
+  "business_type": "Electronics and home-appliance repair service",
+  "city": "Tirunelveli",
+  "locality": "Palayamkottai",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "contact": {
+    "phone_display": "96553 33511",
+    "phone_e164": "+919655333511",
+    "call_url": "tel:+919655333511",
+    "email": "rishielectronics25@gmail.com",
+    "email_url": "mailto:rishielectronics25@gmail.com",
+    "whatsapp_number_e164": "+919655333511",
+    "whatsapp_url": "https://wa.me/919655333511",
+    "whatsapp_evidence": "Link displayed on both sites; account availability not tested"
+  },
+  "address": {
+    "street": "H107, Kamarajar Salai",
+    "area": "Anbunagar, Maharaja Nagar",
+    "locality": "Palayamkottai",
+    "city": "Tirunelveli",
+    "state": "Tamil Nadu",
+    "postal_code": "627011",
+    "country": "India"
+  },
+  "opening_hours": {
+    "timezone": "Asia/Kolkata",
+    "monday_to_saturday": {
+      "opens": "09:00",
+      "closes": "20:00"
+    },
+    "sunday": "By appointment; no fixed hours published",
+    "evidence": "Displayed consistently on both websites"
+  },
+  "maps": {
+    "published_directions_url": "https://maps.app.goo.gl/GQfMKw3diiBEmhEf7",
+    "published_embed_url": "https://maps.google.com/maps?q=Rishi+Electronics,+Palayamkottai,+Tirunelveli&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    "coordinates_from_redirect": {
+      "latitude": 8.7052664,
+      "longitude": 77.7459429,
+      "verification_status": "Extracted from Maps redirect; not independently verified"
+    },
+    "place_reference_from_redirect": "/g/11kqgv6g11"
+  },
+  "language_observed": "English",
+  "website_role": "Local service enquiries, not an online product store",
+  "claims_requiring_confirmation": [
+    "Doorstep service coverage",
+    "All-brand service scope",
+    "5.0 Google rating and current review count",
+    "Repair warranty",
+    "Price and diagnosis-fee policy",
+    "Experience or founding year",
+    "Annual maintenance contract scope"
+  ],
+  "unknown": {
+    "owner_name": null,
+    "founding_year": null,
+    "gst_number": null,
+    "legal_entity_name": null,
+    "team_size": null,
+    "service_radius_km": null,
+    "specific_brands": null,
+    "payments": null,
+    "pickup_delivery": null,
+    "diagnostic_fee": null,
+    "warranty_terms": null,
+    "verified_social_profiles": null,
+    "pricing": null
+  },
+  "data_status": "Publicly displayed business facts; owner confirmation recommended before launch"
+}
